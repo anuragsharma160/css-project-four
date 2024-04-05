@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    height: auto;
+}
+
+.container{
+    padding: 50px 100px;
+    height: auto;
+}
+
+img[src="./assets/Logo.png"]{
+    width: 120px;
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grow-list{
+    width: 75%;
+}
+
+.list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 48%;
+    font-family: poppins;
+    color: #808080;
+    margin-left: 35px;
+
+}
+
+.list-item:hover{
+    color: black;
+}
+
+.nav-button{
+    border: unset;
+    padding: 1em 2em;
+    border-radius: 10px;
+    background-color: #5d51af;
+    color: #ffffff;
+    font-size: 15px;
+    width: 100%;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.banner-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img[src="./assets/Header Illustration.png"]{
+    position: absolute;
+    right: -30px;
+    top: 120px;
+    width: 63%;
+    height: auto;
+}
+
+.list-item:hover:nth-child(n){
+    cursor: pointer;
+}
+
+.heading-text{
+    width: 55%;
+    font-family: poppins;
+    font-size: 56.5px;
+    line-height: 72px;
+    font-weight: 500;
+    margin: 15% 0% 2% 0%;
+    margin-left: 7%;
+    color: #3a046d;
+    transform: scaleX(1.26);
+}
+
+.heading-text span{
+    color: slateblue;
+}
+
+p.description{
+    font-family: poppins;
+    color: grey;
+    width: 55%;
+    margin-top: 25px;
+    margin-left: 3.5%;
+    transform: scaleX(1.12);
+}
+
+.btn{
+    margin-top: 62px;
+    font-weight: 500;
+    font-size: 20px;
+    width: 44%;
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        padding: 20px 0px 20px 20px;
+        padding: 20px;
+    }
+    .navbar-container{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        height: 240px;
+    }
+
+    .list{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 32%;
+    }
+
+    .list-item:nth-child(n){
+        display: inline-block;
+    }
+
+    img[src="./assets/Logo.png"]{
+        margin: 0;
+        padding: 0;
+    }
+
+    .heading-text{
+        width: 55%;
+        font-family: poppins;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        color: #3a046d;
+    }
+
+    p.description{
+        font-family: poppins;
+        color: grey;
+        width: 55%;
+        margin-top: 25px;
+        font-size: 13px;
+
+    }
+
+    .nav-button{
+        border: unset;
+        padding: 1em 2em;
+        border-radius: 10px;
+        background-color: #5d51af;
+        color: #ffffff;
+        font-size: 12px;
+        width: 100%;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+
+    .btn{
+        margin-top: 32px;
+        font-weight: 500;
+        font-size: 12px;
+        width: 100%;
+    }
+    
+    img[src="./assets/Header Illustration.png"]{
+        position: absolute;
+        right: -50px;
+        right: -30px;
+        top: 120px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 960px){
+    .container{
+        padding: 20px;
+    }
+
+    .navbar-container{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        height: 140px;
+    }
+
+    .grow-list{
+        width: 100%;
+    }
+
+    .list{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: 100%;
+    }
+
+    .heading-text{
+        width: 55%;
+        font-family: poppins;
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        color: #3a046d;
+    }
+
+    .btn{
+        margin-top: 32px;
+        font-weight: 500;
+        font-size: 15px;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width:960px){
+    .btn{
+        width: 70%;
+    }
+}
+
+
+@media screen and (min-width: 961px) and (max-width: 1280px){
+    .container{
+        padding: 30px;
+    }
+
+    .list{
+        width: 70%;
+    }
+
+    .heading-text{
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .btn{
+        width: 60%;
+        margin-top: 50px;
+    }
+}
